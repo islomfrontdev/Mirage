@@ -14,6 +14,9 @@
   justify-content: space-between;
   align-items: center;
 }
+body {
+  transition: all 0.3s;
+}
 header {
   padding: 10px 0;
 }
@@ -144,6 +147,21 @@ section {
     display: none;
   }
 }
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f78bb6;
+  border: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 200px) {
   .logo_img {
     width: 80px;
