@@ -5,6 +5,9 @@
   text-decoration: none;
   list-style-type: none;
 }
+body {
+  overflow-x: hidden;
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -142,16 +145,60 @@ section {
 .service_card:hover a {
   display: block;
 }
-@media screen and (max-width: 550px) {
-  .container {
-    width: 90%;
-  }
-  .menu_btn {
-    display: block;
-  }
-  header ul {
-    display: none;
-  }
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer {
+  background: #fff2f6;
+  padding: 40px 0 0 0;
+}
+footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #919299;
+}
+.title_messengers {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.messengers_box {
+  display: flex;
+  gap: 10px;
+}
+.messengers_box button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+}
+.messengers_box button i {
+  color: #a7a7a7;
+}
+.fa-twitter {
+  color: #f78cb6 !important;
+}
+.footer_menu_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #56597a;
+  margin-bottom: 20px;
+}
+footer ul li {
+  margin: 7px 0;
+}
+footer ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #919299;
 }
 .btn {
   width: 50px;
@@ -167,14 +214,19 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-@media screen and (max-width: 200px) {
-  .logo_img {
-    width: 80px;
-  }
-  .menu_btn {
-    font-size: 16px;
-  }
+.footer_bottom {
+  background-color: #f78cb6;
+  padding: 10px 0;
+  color: #fff;
+}
+.footer_bottom select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.footer_bottom select option {
+  color: #000;
 }
 @media screen and (max-width: 1180px) {
   .suptitle {
@@ -191,6 +243,7 @@ section {
     width: 400px;
   }
 }
+
 @media screen and (max-width: 957px) {
   .suptitle {
     font-size: 16px;
@@ -231,11 +284,45 @@ section {
     width: 46%;
   }
 }
+@media screen and (max-width: 570px) {
+  .container {
+    width: 90%;
+  }
+  .menu_btn {
+    display: block;
+  }
+  header ul {
+    display: none;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer ul li a {
+    font-size: 15px;
+  }
+  .footer_menu_title {
+    font-size: 18px;
+  }
+  .footer_flex {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 460px) {
   .main_section img {
     width: 100%;
   }
   .service_card {
     width: 100%;
+  }
+  .footer_flex {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .logo_img {
+    width: 80px;
+  }
+  .menu_btn {
+    font-size: 16px;
   }
 }
